@@ -53,6 +53,17 @@ class User extends Authenticatable
 
     protected $primaryKey = '_id';
 
+    static $rules = [
+        'email' => 'required|email',
+        'password' => 'required|min:6',
+        'name' => 'required|string',
+        'address' => 'string',
+        'personal_info' => '',
+        'permission' => 'required',
+        'status' => 'required|int',
+        'place_id' => 'required|int'
+    ];
+
 
     public function medical_consultation()
     {

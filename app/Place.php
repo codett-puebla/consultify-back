@@ -19,6 +19,13 @@ class Place extends Model
         'user_pay_id'
     ];
 
+    static $rules = [
+        'name' => 'required|string',
+        'address' => 'required|string',
+        'information' => 'string',
+        'user_pay_id' => 'required|int'
+    ];
+
     public function user(){
         return $this->hasMany(User::class);
     }

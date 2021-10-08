@@ -2,11 +2,11 @@
 
 namespace App\Http\Controllers\Patient;
 
-use App\Http\Controllers\Controller;
+use App\Http\Controllers\ApiController;
 use App\Patient;
 use Illuminate\Http\Request;
 
-class PatientController extends Controller
+class PatientController extends ApiController
 {
     /**
      * Display a listing of the resource.
