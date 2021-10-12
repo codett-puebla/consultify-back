@@ -20,6 +20,12 @@ class Patient extends Model
         'place_id'
     ];
 
+    static $rules = [
+        'name' => 'string',
+        'lastname' => 'string',
+        'place_id' => 'int'
+    ];
+
     public function medical_consultation()
     {
         return $this->hasMany(MedicalConsultation::class);

@@ -26,7 +26,6 @@ class PlaceController extends ApiController
     public function store(Request $request)
     {
         $place = new Place($request->all());
-        $place->save();
         return $this->show($place);
     }
 
